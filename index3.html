@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KURUVA VAISHNAVI — Spark Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-sans">
+  <!-- Hero Section -->
+  <header class="text-center py-12">
+    <h1 class="text-5xl font-extrabold drop-shadow-lg">KURUVA VAISHNAVI</h1>
+    <p class="mt-3 text-2xl font-light">Programmer | Cloud & Application Developer</p>
+    <div class="mt-6 flex justify-center gap-4 flex-wrap">
+      <a href="https://www.linkedin.com/in/kuruva-vaishnavi-030a4536a" target="_blank" class="btn">LinkedIn</a>
+      <a href="mailto:vaishnavikottela@gmail.com" class="btn">Email</a>
+      <a href="https://www.learnvern.com/resume/vaishnavi-vaishu-1752932469" target="_blank" class="btn">Resume</a>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-6 space-y-12">
+    <!-- About -->
+    <section class="card">
+      <h2 class="section-title">About Me</h2>
+      <p>
+        Core Java & Python developer with expertise in AWS (EC2, S3, IAM, VPC) and databases
+        like MySQL and MongoDB. Deployed <strong>brastia.com</strong> on AWS EC2.
+        Passionate about building scalable, secure, and efficient cloud applications.
+      </p>
+    </section>
+
+    <!-- Skills -->
+    <section class="card">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="flex flex-wrap gap-2">
+        <span class="chip">Java</span>
+        <span class="chip">Python</span>
+        <span class="chip">HTML</span>
+        <span class="chip">SQL</span>
+        <span class="chip">JSON</span>
+        <span class="chip">MongoDB</span>
+        <span class="chip">AWS (EC2, S3, IAM, VPC)</span>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="card">
+      <h2 class="section-title">Experience</h2>
+      <p><strong>Cloud Application Developer (Trainee)</strong> — Rooman Technologies Pvt Ltd (May 2025 – Jul 2025)</p>
+    </section>
+
+    <!-- Education -->
+    <section class="card">
+      <h2 class="section-title">Education</h2>
+      <p><strong>B.Tech / BE</strong> — St. John's College of Engineering and Technology (2022 – Current)<br>Aggregate: 78.8%</p>
+      <h3 class="mt-3 font-semibold">Courses</h3>
+      <ul class="list-disc list-inside">
+        <li>Python, AWS, Java — Learnvern</li>
+        <li>HTML, Python, AWS — Learnvern</li>
+      </ul>
+    </section>
+
+    <!-- Hobbies & Languages -->
+    <section class="card">
+      <h2 class="section-title">Hobbies & Languages</h2>
+      <p><strong>Hobbies:</strong> Watching movies, Playing games</p>
+      <p><strong>Languages:</strong> English, Telugu, Kannada, Hindi (Intermediate)</p>
+    </section>
+  </main>
+
+  <footer class="py-6 text-center bg-black/40 mt-12">
+    <p>© <span id="year"></span> KURUVA VAISHNAVI | Designed with ❤️</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+/* Spark theme styles */
+.btn {
+  @apply inline-block bg-white text-purple-700 font-semibold px-5 py-2 rounded-full shadow-lg hover:scale-105 hover:bg-gray-200 transition transform;
+}
+.card {
+  @apply bg-white/20 backdrop-blur-lg p-6 rounded-2xl shadow-xl;
+}
+.section-title {
+  @apply text-3xl font-bold mb-4 text-yellow-300;
+}
+.chip {
+  @apply bg-gradient-to-r from-yellow-400 to-pink-500 text-black px-4 py-1 rounded-full text-sm shadow-md;
+}
+# KURUVA VAISHNAVI — Spark Portfolio
+
+A colorful, responsive portfolio built with **HTML + Tailwind CSS**.
+
+## Run Locally
+Open `index.html` in any browser.
+
+## Deploy on GitHub Pages
+1. Create a new GitHub repository named `vaishnavi-spark-portfolio`.
+2. Upload all files from this folder.
+3. In the repo: **Settings → Pages** → set **Branch** = `main`, **Folder** = `/root`.
+4. Your live link will be:
+   https://<your-username>.github.io/vaishnavi-spark-portfolio/
+# In the same folder that contains vaishnavi-spark-portfolio/
+cd vaishnavi-spark-portfolio
+git init
+git add .
+git commit -m "Add Spark Portfolio"
+git branch -M main
+git remote add origin https://github.com/<your-username>/vaishnavi-spark-portfolio.git
+git push -u origin main
+
